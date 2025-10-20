@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+*.egg-info/
+env/
+.venv/
+venv/
+build/
+dist/
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+
+# Outputs / generated images
+outputs/
+checkpoints/
