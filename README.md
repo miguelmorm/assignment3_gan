@@ -38,16 +38,27 @@ ASSIGNMENT3_GAN/
 
 ## Requirements
 
+
+
 ### Install dependencies locally (recommended inside a virtual environment)
 ```bash
 pip install -r requirements.txt
+
+---
+
 Alternatively, build and run with Docker
 # Build the image
 docker build -t sps-gan:latest .
 
 # Run the container
 docker run --rm -p 8000:8000 sps-gan:latest
+
+---
+
 This command runs the FastAPI app inside a Docker container and exposes it at port 8000.
+
+---
+
 API Endpoints
 Endpoint	Method	Description
 /health	GET	Check server health
