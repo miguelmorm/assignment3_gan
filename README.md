@@ -123,5 +123,9 @@ Train a GAN capable of generating realistic hand-written digits using the MNIST 
 
 ---
 
+## Part 3 – Assignment3_GAN_Theory.pdf
+
+---
+
 **Summary:**  
 This project combines deep learning, API design, and containerization into a single deployable solution demonstrating a complete lifecycle for Generative AI model integration.
