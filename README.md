@@ -1,11 +1,12 @@
-# Assignment 3 – GAN (PyTorch) + FastAPI + Docker  
+# Assignment 3 – GAN (PyTorch) + FastAPI + Docker
 
 This project implements a **Generative Adversarial Network (GAN)** using **PyTorch**, served via a **FastAPI** web application, and containerized using **Docker**.  
-It includes endpoints to **train the GAN** and **generate synthetic images**, as well as a **health check** and **auto-generated API documentation**.
+It includes endpoints to train the GAN and generate synthetic images, as well as a health check and auto-generated API documentation.
 
 ---
 
 ## Project Overview
+
 - **Frameworks:** PyTorch, FastAPI, Uvicorn  
 - **Containerization:** Docker  
 - **Environment:** Python 3.10+  
@@ -15,6 +16,7 @@ It includes endpoints to **train the GAN** and **generate synthetic images**, as
 ---
 
 ## Project Structure
+
 ASSIGNMENT3_GAN/
 │
 ├── app/
@@ -38,27 +40,17 @@ ASSIGNMENT3_GAN/
 
 ## Requirements
 
-
-
 ### Install dependencies locally (recommended inside a virtual environment)
+
 ```bash
 pip install -r requirements.txt
-
----
-
 Alternatively, build and run with Docker
 # Build the image
 docker build -t sps-gan:latest .
 
 # Run the container
 docker run --rm -p 8000:8000 sps-gan:latest
-
----
-
 This command runs the FastAPI app inside a Docker container and exposes it at port 8000.
-
----
-
 API Endpoints
 Endpoint	Method	Description
 /health	GET	Check server health
@@ -111,3 +103,19 @@ Endpoint	Method	Description
 /health	GET	Server status check
 /docs	GET	Swagger UI documentation
 /redoc	GET	Alternative API view
+Evaluation Notes
+Demonstrates integration of deep learning training and deployment through FastAPI.
+Meets Module 6 objectives by linking GAN training to API endpoints.
+Includes data loading, model definition, training loop, and inference workflow, all via HTTP requests.
+Represents a complete end-to-end workflow from model design to deployment and Docker execution.
+Testing Instructions
+To interactively test the API using the FastAPI Swagger UI:
+Start the server:
+uvicorn app.main:app --reload
+Open your browser and navigate to:
+http://127.0.0.1:8000/docs
+From there, you can:
+Use /train_gan to train the model
+Use /generate_gan to generate MNIST-style images
+Use /health to check the server status
+This provides an intuitive graphical interface for running and validating each API endpoint without using external tools.
