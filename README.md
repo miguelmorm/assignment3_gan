@@ -1,4 +1,5 @@
 Assignment 3 – GAN (PyTorch) + FastAPI + Docker
+
 This project implements a Generative Adversarial Network (GAN) using PyTorch, served via a FastAPI web application, and containerized using Docker.
 It includes endpoints to train the GAN and generate synthetic images, as well as a health check and auto-generated API documentation.
 Project Overview
